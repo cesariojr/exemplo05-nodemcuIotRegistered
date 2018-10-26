@@ -1,22 +1,21 @@
 # exemplo05-nodemcuIotRegistered
 
-Jose Maria Cesario Jr
-   Exemplo IBM Watson IoT Platform
-   Hardware: new NodeMCU LoLin V3 + BMP180
-   
+# Exemplo IBM Watson IoT Platform
+Esse exemplo mostra a conexão de um dispositivo NodeMCU conectado como registered device na IBM Watson IoT Platform, usando o plano Lite.
+
+## Hardware
+* NodeMCU Amica ou LoLin V3
+* Sensor Barômetro BMP180
+* Cabos de conexão
    
 ![alt text](https://github.com/cesariojr/exemplo05-nodemcuIotRegistered/blob/master/materials.png)
 
-   Logica:
-   1. efetua conexao com a rede WiFi
-   2. obtem as grandezas de temperatura, pressao e altitude do sensor BMP180
-   3. conecta no servidor MQTT quickstart do IBM Watson IoT Platform
-   4. publica a JSON string para o topico quickstart:MAC_ADDRESS
+Lógica:
+1. Efetuar conexao com a rede WiFi
+2. Obter as grandezas de temperatura, pressao e altitude do sensor BMP180
+3. Conectar no serviço IBM Watson IoT Platform como registered device
+4. Publicar as grandezas obtidas do sensor através de um payload JSON, através do protocolo MQTT para o serviço IBM Watson IoT Platform
    
-   referencias Bluemix e IoTF:
-   Author: Ant Elder
-   https://developer.ibm.com/recipes/tutorials/connect-an-esp8266-with-the-arduino-sdk-to-the-ibm-iot-foundation/
-   
-   referencias conversao float para string
-   http://www.hobbytronics.co.uk/arduino-float-vars
-   http://forum.carriots.com/index.php/topic/61-wireless-gardening-with-arduino-cc3000-wifi-modules/page-2
+Referências
+* https://developer.ibm.com/recipes/tutorials/connect-an-esp8266-with-the-arduino-sdk-to-the-ibm-iot-foundation/ (Author: Ant Elder)
+* http://www.hobbytronics.co.uk/arduino-float-vars (conversao float para string
