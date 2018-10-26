@@ -3,6 +3,10 @@
 Jose Maria Cesario Jr
    Exemplo IBM Watson IoT Platform
    Hardware: new NodeMCU LoLin V3 + BMP180
+   
+   
+![alt text](https://github.com/cesariojr/exemplo05-nodemcuIotRegistered/blob/master/materials.png)
+
    Logica:
    1. efetua conexao com a rede WiFi
    2. obtem as grandezas de temperatura, pressao e altitude do sensor BMP180
